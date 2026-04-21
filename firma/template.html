@@ -1,0 +1,43 @@
+<!--
+  Accountrix — Plantilla de firma de correo
+  ==========================================
+  Reemplazar los placeholders:
+    {{NOMBRE}}          → primer nombre
+    {{APELLIDO}}        → apellido (o apellidos)
+    {{CARGO}}           → cargo del socio/empleado
+    {{LINKEDIN_URL}}    → URL de LinkedIn (personal o de la empresa)
+    {{INSTAGRAM_URL}}   → URL de Instagram
+    {{WHATSAPP_URL}}    → link wa.me/573XXXXXXXXX
+
+  Para instalar en Gmail:
+  1. Gmail → ⚙️ Configuración → Ver todos los ajustes → General → Firma
+  2. Crear nueva firma → pegar este HTML con Cmd+V (Gmail lo renderiza automáticamente)
+     (Si pega como texto plano, usar la extensión "HTML Signature for Gmail" o pegar
+      desde un navegador que preserve formato)
+  3. Guardar cambios al final de la página
+-->
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; color: #120C28; border-collapse: collapse;">
+  <tr>
+    <td valign="top" style="padding: 0 24px 0 0; vertical-align: top;">
+      <img src="https://viceversable.github.io/accountrix-public/assets/logo/Logo-Light.png" width="140" alt="Accountrix" style="display: block; border: 0; margin-bottom: 16px;">
+      <img src="https://viceversable.github.io/accountrix-public/assets/firma/bono.png" width="140" alt="" style="display: block; border: 0; margin-bottom: 16px;">
+      <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+        <tr>
+          <td style="padding: 0 8px 0 0;">
+            <a href="{{LINKEDIN_URL}}" style="text-decoration: none;"><img src="https://viceversable.github.io/accountrix-public/assets/social/LinkedIn.png" width="28" height="28" alt="LinkedIn" style="display: block; border: 0;"></a>
+          </td>
+          <td style="padding: 0 8px 0 0;">
+            <a href="{{INSTAGRAM_URL}}" style="text-decoration: none;"><img src="https://viceversable.github.io/accountrix-public/assets/social/Instagram.png" width="28" height="28" alt="Instagram" style="display: block; border: 0;"></a>
+          </td>
+          <td>
+            <a href="{{WHATSAPP_URL}}" style="text-decoration: none;"><img src="https://viceversable.github.io/accountrix-public/assets/social/WhatsApp.png" width="28" height="28" alt="WhatsApp" style="display: block; border: 0;"></a>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td valign="top" style="padding: 0 0 0 24px; vertical-align: top; border-left: 1px solid #E5E5E5;">
+      <div style="font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 26px; font-weight: 700; line-height: 1.15; color: #120C28; margin: 0;">{{NOMBRE}}<br>{{APELLIDO}}</div>
+      <div style="font-family: 'Rethink Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.4; color: #120C28; margin-top: 6px;">{{CARGO}}</div>
+    </td>
+  </tr>
+</table>
